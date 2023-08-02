@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Borel&family=Kaushan+Script&family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+      body{
+        background:linear-gradient(to right bottom ,#77a1d3,rgb(123, 204, 202),#e684ae);
+       
+      }
+
+      *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+             
+      .head{
+        height: 15%;
+        background:linear-gradient(to right,#e55d87,#5fc3e4);
+        margin: auto;
+        width: 70%;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+       }
+       .first{
+        height: 8%;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        align-items: center;
+        border-radius: 40px;
+        font-family: 'Alkatra', cursive;
+font-family: 'Lobster', cursive;
+        
+       }
+       input[type=text]{
+        height: 40px;
+        width:300px;
+       font-size: large;
+       font-weight: bolder;
+       padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(210, 231, 188);
+        color: rgb(11, 27, 14);
+       outline: none;
+       font-family: 'Alkatra', cursive;
+font-family: 'Borel', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Pacifico', cursive;
+
+        display: flex;
+        flex: 1;
+        border: red 2px solid;
+      
+       }
+       button[type=submit]{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #e55d87;
+        border: red 2px solid;
+        margin-left: 10px;
+        cursor: pointer;
+        
+        }
+        button>img{
+          width: 25px;
+        }
+       form{
+        display:flex;
+        margin: 10px;
+        
+        
+       }
+       @media only screen and (max-width: 550px) {
+        input[type=text]{
+        height: 40px;
+        width:80%;
+        
+        }
+        
+       }
+       .content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        
+       }
+       .search_result{
+        margin-bottom: 60px;
+        width: 30%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(0,0,0,0.2);
+        overflow: hidden;
+       }
+       .search_result img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: opaacity 0.2s ease-in-out;
+       }
+       .search_result:hover img{
+        opacity: 0.8;
+               }
+               .search_result a{
+                font-size: 20px;
+                text-decoration: none;
+                color: black;
+                display: block;
+                padding: 10px;
+                text-transform: capitalize;
+               }
+               .show{
+                background-color: rgb(2, 24, 10);
+                font-size:larger;
+                display: block;
+                margin: 30px auto;
+                border-radius: 5px;
+                cursor: pointer;
+                display: none;
+                text-align: center;
+                padding: 10px 20px;
+                color: azure;
+               }
+               @media screen and (max-width:768px) {
+                .search_result{
+                  width:45%
+                }
+                .content{
+                  padding: 20px;
+                }
+               }
+               @media screen and (max-width:480px) {
+                .search_result{
+                  width:100%
+                }
+               }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="first"><h1>Image Search App</h1></div>
+     <div class="head">
+        <form action="">
+            <input type="text" name="" id="search" placeholder="Search for Images">
+            <button type="submit">
+              <img src="https://cdn-icons-png.flaticon.com/512/751/751381.png" alt="">
+            </button>
+        </form>
+     </div>
+     <div class="content">
+      <div class="search_result"><img src="https://images.unsplash.com/photo-1690567142317-01e3c5a8aa0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="">
+      <a href="https://images.unsplash.com/photo-1690567142317-01e3c5a8aa0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60" target="_blank">A beautifull Cloudy scenery</a></div>
+
+      <div class="search_result"><img src="https://images.unsplash.com/photo-1676594808583-68cb10fdbb17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+        <a href="https://images.unsplash.com/photo-1676594808583-68cb10fdbb17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" target="_blank">A plant</a></div>
+
+      <div class="search_result"><img src="https://images.unsplash.com/photo-1659132814891-ef346422b339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80" alt="">
+        <a href="https://images.unsplash.com/photo-1659132814891-ef346422b339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1026&q=80">An elephant</a>
+      </div>
+     </div>
+
+
+     <button class="show">Show more</button>
+
+     <script>
+      const accessKey="PWupS2q4P_gypAT3GJyd63To1OwpQJq76JJ0-MXkVzI";
+     const form=document.querySelector("form");
+      const search=document.querySelector('#search');
+      const content=document.querySelector('.content');
+      const show=document.querySelector(".show");
+
+      let inputData=""
+      let page=1;
+      
+     async function searchImages(){
+        inputData=search.value;
+        const url=`https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=PWupS2q4P_gypAT3GJyd63To1OwpQJq76JJ0-MXkVzI`
+         console.log(url);
+        const response= await fetch(url)
+         const data= await response.json()
+         console.log(data);
+         const results=data.results
+         if(page==1){
+          content.innerHTML=""
+         }
+
+
+         results.map((result)=>{
+          const search_result=document.createElement('div');
+          search_result.classList.add("search_result");
+          const image=document.createElement('img');
+          image.src=result.urls.small;
+          image.alt=result.alt_description;
+
+          const imgLink=document.createElement('a');
+          imgLink.href=result.links.html;
+          imgLink.target="_blank";
+          imgLink.textContent=result.alt_description;
+
+
+          search_result.appendChild(image);
+          search_result.appendChild(imgLink);
+          content.appendChild(search_result);
+         });
+
+         page++;
+
+         if(page>1){
+          show.style.display="block";
+         }
+      }
+
+
+      form.addEventListener("submit",(event)=>{
+        event.preventDefault();
+        page=1;
+        searchImages();
+        
+      });
+
+      show.addEventListener("click",()=>{
+        searchImages();
+      })
+
+           </script>
+   </div>
+</body>
+</html>
